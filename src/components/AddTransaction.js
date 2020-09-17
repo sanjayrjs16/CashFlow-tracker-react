@@ -2,8 +2,8 @@ import React, {useState, useEffect} from 'react'
 
 export const AddTransaction = () => {
     const [text, setText] = useState(() => { return "" })
-    const [amount, setAmount] = useState(0)
-    const [select, setSelect] = useState("")
+    const [amount, setAmount] = useState(() => { return "" })
+    const [select, setSelect] = useState(() => { return "" })
     // const selectRef = useRef(0)
    
     useEffect(() =>{
@@ -47,11 +47,11 @@ export const AddTransaction = () => {
                         <option value= {"Earn"}>Earn</option>
                     </select>
                     
-                    <input type="text" value={amount} onChange={(e) => {setAmount(e.target.value)}}  placeholder="Enter amount" />
+                    <input type="number" value={amount} onChange={(e) => {setAmount(e.target.value)}}  placeholder="Enter amount" />
                 </div>
                 <button type="submit">Add transaction</button>
             </form>
-        console.log(amount)
+        {console.log(amount)}
         </div>
     )
 }
