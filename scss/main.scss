@@ -1,0 +1,94 @@
+@import "variables";
+
+body{
+    background-color: $bg-color;
+    
+}
+
+%card{
+    margin: 2rem;
+    padding: 2%;
+    border-radius: 2rem;
+    
+}
+%inputs{
+    width: 10rem;
+    padding: 0.25rem;
+    margin: 1rem;
+    border-radius: 2rem;
+}
+%buttons{
+    width: 10rem;
+    margin: auto;  
+    border-radius: 2rem;
+    border: none;
+    padding: 0.5rem; 
+
+}
+.App{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    background-color: $primary-color;
+
+    
+    .header{
+        @extend %card;
+        background-color: $secondary-color;
+        color: $light-color;
+
+    }
+
+    .balance{
+        @extend %card; 
+        background-color: $secondary-color;
+        color: $light-color;
+
+    }
+
+    .income-expences{
+        @extend %card;  
+        background-color: $secondary-color;
+        color: $light-color;
+        .earn{
+            @extend %card;
+            display: inline;
+            background-color: $earn-color;
+        }
+        .spent{
+            @extend %card;
+            display: inline;
+            background-color: $spent-color;
+        }
+
+    }
+
+    .add-transaction{
+        @extend %card;  
+        background-color: $dark-color;
+        color: $light-color;
+        
+        .form-items{
+            display: grid;
+            grid-template-rows: 2fr 2fr 1fr;
+            .trans-description-input{
+                @extend %inputs;
+            }
+
+            .trans-amount-input{
+                @extend %inputs;
+            }
+
+            .trans-select{
+                width: 5rem;
+                
+            }
+
+            .trans-button{
+                @extend %buttons;
+                background-color: $secondary-color;
+                color: $light-color;
+            }
+        }
+    }
+}

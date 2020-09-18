@@ -2,12 +2,12 @@ import React from 'react'
 
 export const IncomeExpences = () => {
     return (
-        <div>
-            <div>
-                Earn
+        <div className="income-expences">
+            <div className="earn">
+                Earn: Rs 150
             </div>
-            <div>
-                Spent
+            <div className="spent">
+                Spent: Rs 30
             </div>
         </div>
     )

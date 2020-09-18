@@ -34,22 +34,26 @@ export const AddTransaction = () => {
     // }
    
     return (
-        <div>
-            <h3>Add transaction</h3>
+        <div className="add-transaction">
+            <h3 className="trans-header">Add transaction</h3>
             <form>
-                <div>
-                    <label htmlFor="description">Description</label>
-                    <input type="text"  id="description" value={text} onChange={(e) => {setText(e.target.value)}} placeholder="Description Transaction" />
-                    
-                    <select value={select} onChange={(e) => {setSelect(e.target.value)}} name="typeSelect">
-                        <option value={0} disabled defaultValue>Choose transactions</option>
-                        <option value= {"Spent"}>Spent</option>
-                        <option value= {"Earn"}>Earn</option>
-                    </select>
-                    
-                    <input type="number" value={amount} onChange={(e) => {setAmount(e.target.value)}}  placeholder="Enter amount" />
+                <div className = "form-items">
+                        <div>
+                            <label htmlFor="description">Description:</label>
+                            <input className="trans-description-input" type="text" value={text} onChange={(e) => {setText(e.target.value)}} placeholder="Description Transaction" />
+                        </div>
+                   
+                       <div>
+                            <select className="trans-select" value={select} onChange={(e) => {setSelect(e.target.value)}} name="typeSelect">
+                                <option value={0} disabled defaultValue>Transaction</option>
+                                <option value= {"Spent"}>Spent</option>
+                                <option value= {"Earn"}>Earn</option>
+                            </select>
+                            <input className="trans-amount-input" type="number" value={amount} onChange={(e) => {setAmount(e.target.value)}}  placeholder="Enter amount" />
+                       </div>
+                 
+                    <button className="trans-button" type="submit">Add transaction</button>
                 </div>
-                <button type="submit">Add transaction</button>
             </form>
         {console.log(amount)}
         </div>

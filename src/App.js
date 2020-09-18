@@ -4,7 +4,7 @@ import {Balance}from './components/Balance'
 import {IncomeExpences}from './components/IncomeExpences'
 import {AddTransaction} from './components/AddTransaction'
 import {TransactionList} from './components/TransactionList'
-import './App.css';
+import './dist/css/main.css';
 
 function App() {
   return (
@@ -12,8 +12,10 @@ function App() {
       <Header />
       <Balance />
       <IncomeExpences />
-      <AddTransaction />
-      <TransactionList />
+      <div className="add-trans">
+        <AddTransaction />
+        <TransactionList />
+      </div>
     </div>
   );
 }

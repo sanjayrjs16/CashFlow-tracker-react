@@ -1,0 +1,52 @@
+body {
+  background-color: #d1d1d1; }
+
+.App .header, .App .balance, .App .income-expences, .App .income-expences .earn, .App .income-expences .spent, .App .add-transaction {
+  margin: 2rem;
+  padding: 2%;
+  border-radius: 2rem; }
+
+.App .add-transaction .form-items .trans-description-input, .App .add-transaction .form-items .trans-amount-input {
+  width: 10rem;
+  padding: 0.25rem;
+  margin: 1rem;
+  border-radius: 2rem; }
+
+.App .add-transaction .form-items .trans-button {
+  width: 10rem;
+  margin: auto;
+  border-radius: 2rem;
+  border: none;
+  padding: 0.5rem; }
+
+.App {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  background-color: #5361e0; }
+  .App .header {
+    background-color: #894db1;
+    color: white; }
+  .App .balance {
+    background-color: #894db1;
+    color: white; }
+  .App .income-expences {
+    background-color: #894db1;
+    color: white; }
+    .App .income-expences .earn {
+      display: inline;
+      background-color: #26c526; }
+    .App .income-expences .spent {
+      display: inline;
+      background-color: #c41b1b; }
+  .App .add-transaction {
+    background-color: black;
+    color: white; }
+    .App .add-transaction .form-items {
+      display: grid;
+      grid-template-rows: 2fr 2fr 1fr; }
+      .App .add-transaction .form-items .trans-select {
+        width: 5rem; }
+      .App .add-transaction .form-items .trans-button {
+        background-color: #894db1;
+        color: white; }
