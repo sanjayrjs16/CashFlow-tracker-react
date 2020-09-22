@@ -1,7 +1,9 @@
 body {
-  background-color: #d1d1d1; }
+  background-color: #d1d1d1;
+  padding: 2rem;
+  border-radius: 1rem; }
 
-.App .header, .App .balance, .App .income-expences, .App .income-expences .earn, .App .income-expences .spent, .App .add-transaction {
+.App, .App .header, .App .balance, .App .income-expences, .App .income-expences .earn, .App .income-expences .spent, .App .add-transaction, .App .add-transaction .trans-header, .App .transaction-list, .App .transaction-list .trans-list-header, .App .transaction-list .trans-list-items {
   margin: 2rem;
   padding: 2%;
   border-radius: 2rem; }
@@ -23,15 +25,16 @@ body {
   margin: auto;
   width: 50%;
   text-align: center;
-  background-color: #5361e0; }
+  background-color: #dddee9; }
   .App .header {
-    background-color: #894db1;
-    color: white; }
+    background-color: #5c5064;
+    color: white;
+    font-size: 2rem; }
   .App .balance {
-    background-color: #894db1;
+    background-color: #5c5064;
     color: white; }
   .App .income-expences {
-    background-color: #894db1;
+    background-color: #5c5064;
     color: white; }
     .App .income-expences .earn {
       display: inline;
@@ -40,13 +43,23 @@ body {
       display: inline;
       background-color: #c41b1b; }
   .App .add-transaction {
-    background-color: black;
+    background-color: #a195c2;
     color: white; }
+    .App .add-transaction .trans-header {
+      background-color: #5c5064; }
     .App .add-transaction .form-items {
       display: grid;
       grid-template-rows: 2fr 2fr 1fr; }
       .App .add-transaction .form-items .trans-select {
         width: 5rem; }
       .App .add-transaction .form-items .trans-button {
-        background-color: #894db1;
+        background-color: #5c5064;
         color: white; }
+  .App .transaction-list {
+    background-color: #a195c2; }
+    .App .transaction-list .trans-list-header {
+      background-color: #5c5064;
+      color: white; }
+    .App .transaction-list .trans-list-items {
+      background-color: #dddee9;
+      list-style: none; }
