@@ -25,7 +25,7 @@ export const AddTransaction = () => {
                     return amount
             }
        })
-        console.log("rendered")
+    
     },[select, amount])
   
    const handleSubmit = (e) => {
